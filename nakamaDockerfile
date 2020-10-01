@@ -12,10 +12,7 @@ LABEL description=Distributed server for social and realtime games and apps.
 	&& apt-get clean  \
 	&& rm -rf /var/lib/apt/lists/*
 WORKDIR /nakama/
-COPY file:18ef48de4b3c598ad6f7e4ca57e0f80eb43365f452e77aa35da738f183f2e52d in /nakama/
-	nakama/
-	nakama/nakama
-
+COPY file:18ef48de4b3c598ad6f7e4ca57e0f80eb43365f452e77aa35da738f183f2e52d in /nakama/nakama/nakama/nakama
 EXPOSE 7349 7350 7351
 ENTRYPOINT ["tini" "--" "/nakama/nakama"]
 HEALTHCHECK &{["CMD-SHELL" "curl -f http://localhost:7350/ || exit 1"] "5m0s" "10s" "0s" '\x00'}
