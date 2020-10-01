@@ -4,12 +4,7 @@ MAINTAINER Heroic Labs <support@heroiclabs.com>
 ARG version
 LABEL version=2.11.1
 LABEL variant=nakama
-|1 version=2.11.1 RUN mkdir -p /nakama/data/modules  \
-	&& apt-get update  \
-	&& apt-get -y upgrade  \
-	&& apt-get install -y --no-install-recommends ca-certificates tzdata curl iproute2 unzip rsync git tini schroot  \
-	&& apt-get clean  \
-	&& rm -rf /var/lib/apt/lists/*
+RUN mkdir -p /nakama/data/modules && apt-get update && apt-get -y upgrade && apt-get install -y --no-install-recommends ca-certificates tzdata curl iproute2 unzip rsync git tini schroot && apt-get clean && rm -rf /var/lib/apt/lists/*
 WORKDIR /nakama/
 EXPOSE 7349 7350 7351
 ENTRYPOINT ["tini" "--" "/nakama/nakama"]
