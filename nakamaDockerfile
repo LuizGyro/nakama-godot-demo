@@ -8,5 +8,4 @@ RUN mkdir -p /nakama/data/modules && apt-get update && apt-get -y upgrade && apt
 WORKDIR /nakama/
 EXPOSE 7349 7350 7351
 ENTRYPOINT ["tini" "--" "/nakama/nakama"]
-HEALTHCHECK &{["CMD-SHELL" "curl -f http://localhost:7350/ || exit 1"] "5m0s" "10s" "0s" '\x00'}
 
