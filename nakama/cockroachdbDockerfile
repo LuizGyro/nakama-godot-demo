@@ -1,0 +1,32 @@
+Analyzing cockroachdb/cockroach:v19.2.5
+Docker Version: 18.09.0
+GraphDriver: overlay2
+Environment Variables
+|PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+|COCKROACH_CHANNEL=official-docker
+
+Open Ports
+|26257
+|8080
+
+Image user
+|User is root
+
+Potential secrets:
+Dockerfile:
+CMD ["bash"]
+RUN apt-get update  \
+	&& apt-get -y upgrade  \
+	&& apt-get install -y libc6 ca-certificates tzdata  \
+	&& rm -rf /var/lib/apt/lists/*
+RUN mkdir -p /cockroach
+COPY multi:690d3df01aa861028960a91d5f324dde2f2531cacfed0e658df9540aad404088 in /cockroach/
+	cockroach/
+	cockroach/cockroach
+	cockroach/cockroach.sh
+
+WORKDIR /cockroach/
+ENV COCKROACH_CHANNEL=official-docker
+EXPOSE 26257 8080
+ENTRYPOINT ["/cockroach/cockroach.sh"]
+
