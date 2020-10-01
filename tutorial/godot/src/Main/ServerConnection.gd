@@ -13,7 +13,7 @@ enum WritePermissions { NO_WRITE, OWNER_WRITE }
 const KEY_SERVER := "nakama_godot_demo"
 
 var _session: NakamaSession
-var _client := Nakama.create_client(KEY_SERVER, "127.0.0.1", 7350, "http")
+var _client := Nakama.create_client(KEY_SERVER, "https://fathomless-refuge-33545.herokuapp.com/nakama", 7350, "http")
 var _socket: NakamaSocket
 var _world_id: String
 # Lists other clients present in the game world we connect to.

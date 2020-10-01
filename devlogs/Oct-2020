@@ -1,0 +1,22 @@
+------------------- 01/10/2020:
+
+Gerando o dockerfile pela imagem:
+https://stackoverflow.com/questions/19104847/how-to-generate-a-dockerfile-from-an-image
+
+O primeiro comando fica intacto. O segundo muda um pouco:
+dfimage -sV=1.36 cockroachdb/cockroach:v19.2.5 > cockroachdbDockerfile
+dfimage -sV=1.36 heroiclabs/nakama:2.11.1 > nakamaDockerfile
+(O nome dos repos foi pego do docker-compose.yml)
+
+Geral:
+https://devcenter.heroku.com/articles/local-development-with-docker-compose
+https://elements.heroku.com/addons
+https://devcenter.heroku.com/articles/build-docker-images-heroku-yml
+https://dockerlabs.collabnix.com/intermediate/workshop/DockerCompose/Difference_between_dockerfile_and_docker_compose.html#:~:text=A%20Dockerfile%20is%20a%20text,line%20to%20assemble%20an%20image.&text=Using%20docker%20build%20commmand%20we,running%20multi%2Dcontainer%20Docker%20applications.
+https://heroiclabs.com/docs/authentication/
+https://stackoverflow.com/questions/50452860/error-response-from-daemon-no-build-stage-in-current-context
+
+App:
+https://dashboard.heroku.com/apps/fathomless-refuge-33545
+(Dei deploy manual mesmo, depois de ter seguido os passos do heroku.yml).
+https://fathomless-refuge-33545.herokuapp.com/nakama
