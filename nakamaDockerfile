@@ -1,3 +1,4 @@
+FROM heroiclabs/nakama:2.11.1
 CMD ["bash"]
 MAINTAINER Heroic Labs <support@heroiclabs.com>
 ARG version
