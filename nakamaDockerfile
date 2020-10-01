@@ -4,7 +4,6 @@ MAINTAINER Heroic Labs <support@heroiclabs.com>
 ARG version
 LABEL version=2.11.1
 LABEL variant=nakama
-LABEL description=Distributed server for social and realtime games and apps.
 |1 version=2.11.1 RUN mkdir -p /nakama/data/modules  \
 	&& apt-get update  \
 	&& apt-get -y upgrade  \
