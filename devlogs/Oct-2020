@@ -20,3 +20,7 @@ App:
 https://dashboard.heroku.com/apps/fathomless-refuge-33545
 (Dei deploy manual mesmo, depois de ter seguido os passos do heroku.yml).
 https://fathomless-refuge-33545.herokuapp.com/nakama
+
+PRÓXIMO OBJETIVO:
+Descobrir como fazer o create_client funcionar com a URL do nakama (https://fathomless-refuge-33545.herokuapp.com/nakama) (ou de repente ele deveria funcionar,
+mas o build do container não foi apropriado), ou como settar um IP estático para o heroku.
