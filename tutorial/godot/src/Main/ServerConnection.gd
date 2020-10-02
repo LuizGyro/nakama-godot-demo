@@ -10,10 +10,10 @@ enum ReadPermissions { NO_READ, OWNER_READ, PUBLIC_READ }
 enum WritePermissions { NO_WRITE, OWNER_WRITE }
 
 # Unique server key, as written in docker-compose.yml.
-const KEY_SERVER := "nakama_godot_demo"
+const KEY_SERVER := "defaultkey"
 
 var _session: NakamaSession
-var _client := Nakama.create_client(KEY_SERVER, "https://fathomless-refuge-33545.herokuapp.com/nakama", 7350, "http")
+var _client := Nakama.create_client(KEY_SERVER, "157.245.90.236", 7350, "http")
 var _socket: NakamaSocket
 var _world_id: String
 # Lists other clients present in the game world we connect to.

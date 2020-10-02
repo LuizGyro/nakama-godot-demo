@@ -24,3 +24,24 @@ https://fathomless-refuge-33545.herokuapp.com/nakama
 PRÓXIMO OBJETIVO:
 Descobrir como fazer o create_client funcionar com a URL do nakama (https://fathomless-refuge-33545.herokuapp.com/nakama) (ou de repente ele deveria funcionar,
 mas o build do container não foi apropriado), ou como settar um IP estático para o heroku.
+
+https://www.youtube.com/watch?v=kCCd2Brp3ZM
+https://marketplace.digitalocean.com/apps/nakama
+https://stackoverflow.com/questions/47606371/how-to-translate-docker-compose-yml-to-dockerfile
+https://www.google.com/search?client=ubuntu&hs=mLt&ei=MYx2X8GYMJDH5OUPraC0sAE&q=raspberry+pi+as+docker+compose+server&oq=raspberry+pi+as+docker+compose+server&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB46BAgAEEc6BAgAEBM6CAgAEBYQHhATOgYIABAWEB5KBQggEgEwSgUIKBIBMFD2gwFYj6EBYNGhAWgBcAJ4AIABmAKIAYkRkgEGMC4xMi4zmAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwiB9cql6pTsAhWQI7kGHS0QDRYQ4dUDCA0&uact=5
+https://medium.com/oracledevs/expose-docker-container-services-on-the-internet-using-the-ngrok-docker-image-3f1ea0f9c47a
+https://www.google.com/search?q=how+to+expose+docker+container+to+internet&oq=how+to+expose+docke&aqs=chrome.1.69i57j0l7.3895j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+sz3CH52xeLhB8NA
+
+
+
+
+
+
+
+
+
+
+
+
